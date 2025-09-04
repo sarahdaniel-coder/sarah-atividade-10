@@ -1,0 +1,72 @@
+/* Define a fonte e centraliza o conteúdo */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f17676;
+}
+ 
+/* Caixa do calendário */
+.calendar {
+    width: 320px;
+    margin: 20px auto;
+    background: rgb(248, 246, 246);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+ 
+/* Cabeçalho com mês e botões */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+/* Botões de navegação */
+.header button {
+    background-color: #df3333;
+    color: rgb(14, 9, 9);
+    border: none;
+    padding: 5px 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+ 
+.header button:hover {
+    background-color: #ee3838;
+}
+ 
+/* Linha com nomes dos dias */
+.weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-weight: bold;
+    padding: 5px 0;
+}
+ 
+/* Área onde ficam os dias */
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+ 
+/* Cada dia do calendário */
+.days div {
+    padding: 10px;
+    border: 1px solid #ebe6e6;
+}
+ 
+/* Dia atual destacado */
+.today {
+    background-color:  #eb4242;
+    color: white;
+    border-radius: 50%;
+}
+ 
+/* Dias que não pertencem ao mês atual */
+.other-month {
+    color: #aaa;
+}
+ 
+  

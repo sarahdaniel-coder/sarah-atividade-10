@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Define o conjunto de caracteres -->
+    <meta charset="UTF-8">
+    <!-- Faz o site se adaptar à largura da tela -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título que aparece na aba do navegador -->
+    <title>Calendário Interativo</title>
+    <!-- Conecta o arquivo CSS para estilização -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Título principal da página -->
+    <h1>Calendário Interativo</h1>
+ 
+    <!-- Contêiner do calendário -->
+    <div class="calendar">
+        <!-- Cabeçalho com botões de navegação e título do mês -->
+        <div class="header">
+            <!-- Botão para voltar um mês -->
+            <button id="prev">&#8592;</button>
+            <!-- Título que mostra o mês e o ano -->
+            <h2 id="monthYear"></h2>
+            <!-- Botão para avançar um mês -->
+            <button id="next">&#8594;</button>
+        </div>
+ 
+        <!-- Nomes dos dias da semana -->
+        <div class="weekdays">
+            <div>Dom</div>
+            <div>Seg</div>
+            <div>Ter</div>
+            <div>Qua</div>
+            <div>Qui</div>
+            <div>Sex</div>
+            <div>Sáb</div>
+        </div>
+ 
+        <!-- Área onde os dias serão preenchidos via JavaScript -->
+        <div id="days" class="days"></div>
+    </div>
+ 
+    <!-- Conecta o arquivo JavaScript para interatividade -->
+    <script src="script.js"></script>
+</body>
+</html> 
